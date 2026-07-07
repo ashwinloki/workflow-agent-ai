@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-f'
+      - 'Dockerfile.backend'
+      - '-t'
+      - 'asia-south1-docker.pkg.dev/lokesh-ai-portfolio/ai-portfolio-images/workflow-agent-backend:latest'
+      - '.'
+
+images:
+  - 'asia-south1-docker.pkg.dev/lokesh-ai-portfolio/ai-portfolio-images/workflow-agent-backend:latest'
